@@ -1,23 +1,33 @@
 <!doctype html>
 <html>
   <head>
-    <title> GTmetrix Analyzer </title>
+    <title> Learning New Words Tool </title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="jquery-3.3.1.min.js"></script>
   </head>
 <body>
-  <h1>GTmetrix Analyzer</h1>
+  <h1> Push in your head  </h1>
+  <button id="settings-slack-button">Settings</button>
+  <div class="settings-slack" id="settings-slack">
+    <form class=set-webhook-url" action="#" id="set-webhook-url">
+      <input class="url-input" type="text"
+             id="url-input" placeholder="Push your webhook url ...">
+      <br>
+      <button type="submit" class="url-button">Add</button>
+    </form>
+  </div>
   <div class="set-question" id="set-question">
     <form class="content-form" action="#" id="content-form">
       <input class="sentence-input" type="text"
              id="sentence-input" placeholder="Push your sentence here ...." value="">
       <input class="word-input" type="text"
              id="word-input" placeholder="Push your word here ...." value="">
-      <button type="submit" class="name-button">Add</button>
+      <button type="submit" class="name-button">Send</button>
     </form>
     <h2 class="show-question" id="show-question"></h2>
   </div>
+  <h2 class="success-message" id="success-message"></h2>
   <script src=”jquery-3.3.1.min.js”></script>
   <script src="popup.js"></script>
 </body>
